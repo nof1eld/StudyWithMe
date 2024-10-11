@@ -1,0 +1,1 @@
+![[2_Elements_de_basesvariables_Opérateurs_Entrée_Sortie_2021.pdf]]
