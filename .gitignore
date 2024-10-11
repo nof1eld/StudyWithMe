@@ -1,9 +1,9 @@
 .DS_Store
 .gitignore
 node_modules
+public
 prof
 tsconfig.tsbuildinfo
-public
 .obsidian
 .quartz-cache
 private/
