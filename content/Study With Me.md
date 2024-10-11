@@ -1,4 +1,4 @@
-# Index of Courses
+# Table of Content
 
 ###### This index contains links to course materials, tutorials (TD), and practical work (TP) for various subjects in the second year (L2) of Computer Science. The courses are incomplete, as this is just an experimental project to organize and easily access study content within Obsidian for personal use.
 
