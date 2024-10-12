@@ -87,8 +87,7 @@ title: "Study With Me"
 
 ### Course
 
-- [[Cours imprimé|Cours imprimé]]
-- [[Cours écrit|Cours écrit]]
+- [[Chapitres 1,2,3,4 & TD Exercices|Chapitres 1,2,3,4 & TD Exercices]]
 
 ### TD
 
