@@ -1,7 +1,8 @@
 ---
 title: "Study With Me"
 ---
-# Table of content
+
+# Table of Content
 
 ###### This index contains links to course materials, tutorials (TD), and practical work (TP) for various subjects in the second year (L2) of Computer Science. The courses are incomplete, as this is just an experimental project to organize and easily access study content within Obsidian for personal use.
 
@@ -32,7 +33,6 @@ title: "Study With Me"
 
 ### TP
 
-- [[MIPS Assembly tutorial]]
 - [[Serie TP 01|Serie TP 01]]
 
 ---
@@ -42,6 +42,7 @@ title: "Study With Me"
 ### Course
 
 - [[Cours Algorithmes|Cours Algorithmes]]
+- [[Algorithmes de tri]]
 
 ### TD
 
@@ -53,11 +54,11 @@ title: "Study With Me"
 
 ---
 
-## Logique Mathematique 
+## Logique Mathématique
 
 ### Course
 
-- [[L2_Logique_Mathematique_Medjahed.pdf]]
+- [[Chapter 1]]
 
 ### TD
 
@@ -87,7 +88,7 @@ title: "Study With Me"
 
 ### Course
 
-- [[Chapitres 1,2,3,4 & TD Exercices|Chapitres 1,2,3,4 & TD Exercices]]
+- [[Chapitres 1,2,3,4 & TD Exercices]]
 
 ### TD
 

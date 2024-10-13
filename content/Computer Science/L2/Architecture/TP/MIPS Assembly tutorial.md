@@ -39,8 +39,7 @@ When writing MIPS assembly, keep these points in mind:
 
 ## Example
 
-```assembly
-.text
+```.text
     li $t0, 12          # Load immediate value 12 into $t0
     li $t1, 14          # Load immediate value 14 into $t1
     add $t2, $t0, $t1   # Add $t0 and $t1, store result in $t2
@@ -64,7 +63,7 @@ When writing MIPS assembly, keep these points in mind:
 
 ## Example 2
 
-```assembly
+```
 .data
     message: .asciiz "Hello, MIPS!"
 
@@ -76,5 +75,4 @@ main:
 
     li $v0, 10          # System call code for exit
     syscall             # Make the system call
-    
 ```
