@@ -70,9 +70,9 @@ title: "Study With Me"
 
 ### Course
 
-- [[Computer Science/L2/Methodes Numériques/Course/Chapitre 1|Chapitre 1]]
-- [[Computer Science/L2/Methodes Numériques/Course/Chapitre 2|Chapitre 2]]
-- [[Computer Science/L2/Methodes Numériques/Course/Chapitre 3|Chapitre 3]]
+- [[Computer Science/L2/Methodes Numériques/TP/Cours TP/Chapitre 1|Chapitre 1]]
+- [[Computer Science/L2/Methodes Numériques/TP/Cours TP/Chapitre 2|Chapitre 2]]
+- [[Computer Science/L2/Methodes Numériques/TP/Cours TP/Chapitre 3|Chapitre 3]]
 
 ### TD
 

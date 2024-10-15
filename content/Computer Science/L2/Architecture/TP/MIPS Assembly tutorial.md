@@ -76,3 +76,31 @@ main:
     li $v0, 10          # System call code for exit
     syscall             # Make the system call
 ```
+
+## Example 3
+
+```assembly
+        .data                   # Section for declaring variables
+num1:   .word   5               # Declare the first integer (5)
+num2:   .word   10              # Declare the second integer (10)
+result: .word   0               # To store the result (initially 0)
+
+        .text                   # Section for code
+        .globl  main            # Declare the main function
+
+main:   
+        # Load the values of num1 and num2 into registers
+        lw      $t0, num1       # Load the value of num1 into register $t0
+        lw      $t1, num2       # Load the value of num2 into register $t1
+
+        # Perform addition
+        add     $t2, $t0, $t1   # Add $t0 and $t1, store result in $t2
+
+        # Store the result
+        sw      $t2, result     # Store the result from $t2 into memory at the address of 'result'
+
+        # Exit the program (system call to terminate)
+        li      $v0, 10         # System call code 10 for exit
+        syscall
+
+```
