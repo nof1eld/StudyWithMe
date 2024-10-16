@@ -29,7 +29,7 @@ title: "Study With Me"
 
 ### TD
 
-- [[Serie TD 01|Serie TD 01]]
+- [[Serie 01|Serie 01]]
 
 ### TP
 
