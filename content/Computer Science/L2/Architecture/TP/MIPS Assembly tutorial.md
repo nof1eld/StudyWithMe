@@ -104,3 +104,7 @@ main:
         syscall
 
 ```
+
+# Different data types in MIPS
+
+![[les différents types de données sur MIPS.pdf]]
