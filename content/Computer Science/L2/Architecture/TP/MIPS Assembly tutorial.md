@@ -11,7 +11,7 @@ MIPS programs are typically structured with two main sections:
 
 2. **`.text` section**:
    - This section contains the program instructions.
-   - Programs end with a `syscall` instruction to execute system calls, such as printing or exiting.
+   - Programs often end with a `syscall` instruction to execute system calls, such as printing or exiting.
 
 ## Key Features
 
@@ -23,26 +23,63 @@ MIPS programs are typically structured with two main sections:
   - `$a0` to `$a3`: Argument registers for function inputs.
   - `$v0`, `$v1`: Used for function return values and system call codes.
 
-### Common Instructions
+### Common Instructions and System Calls
 
-| Instruction | Description                        |
-|-------------|------------------------------------|
-| `li`        | Load immediate                     |
-| `lw`        | Load word                          |
-| `sw`        | Store word                         |
-| `add`       | Addition                           |
-| `sub`       | Subtraction                        |
-| `mul`       | Multiplication                     |
-| `div`       | Division (integer)                 |
-| `move`      | Move data between registers        |
-| `syscall`   | System call for input/output       |
+| Instruction | Description                          |
+|-------------|--------------------------------------|
+| `li`        | Load immediate                       |
+| `lw`        | Load word                            |
+| `sw`        | Store word                           |
+| `add`       | Addition                             |
+| `sub`       | Subtraction                          |
+| `mul`       | Multiplication                       |
+| `div`       | Division (integer)                   |
+| `move`      | Move data between registers          |
+| `syscall`   | System call for input/output         |
 
-## Writing MIPS Code
+#### Common System Call Codes (using `$v0` register)
 
-When writing MIPS assembly, follow these steps:
-1. Begin with the `.data` section for variable declarations.
-2. Follow with the `.text` section for your program instructions.
-3. End your program with a `syscall` to execute the final system call (e.g., exit).
+| `li $v0, x` | System Call Code | Description                               |
+|-------------|------------------|-------------------------------------------|
+| `li $v0, 1` | Print Integer    | Outputs the integer in `$a0`              |
+| `li $v0, 4` | Print String     | Outputs the string at the address in `$a0`|
+| `li $v0, 5` | Read Integer     | Reads an integer from user input          |
+| `li $v0, 8` | Read String      | Reads a string input into memory          |
+| `li $v0, 10`| Exit Program     | Terminates the program                    |
+| `li $v0, 11`| Print Character  | Outputs a single character in `$a0`       |
+| `li $v0, 12`| Read Character   | Reads a single character from input       |
+| `li $v0, 3` | Print Floating-Point Number | Outputs a float (in `$f12`) |
+
+### Example of Using System Calls
+
+Below is a simple example to show how to use various system calls in MIPS assembly.
+
+```assembly
+.data
+    prompt: .asciiz "Enter a number: "   # Message for input prompt
+
+.text
+main:
+    # Display a prompt for input
+    li $v0, 4              # Syscall code for print_string
+    la $a0, prompt         # Load address of the prompt
+    syscall                # Make the syscall to print the prompt
+
+    # Read an integer from user
+    li $v0, 5              # Syscall code for read_integer
+    syscall                # Read integer input into $v0
+    move $t0, $v0          # Move the input value from $v0 to $t0
+
+    # Display the entered number
+    li $v0, 1              # Syscall code for print_integer
+    move $a0, $t0          # Move the value in $t0 to $a0
+    syscall                # Print the integer stored in $a0
+
+    # Exit the program
+    li $v0, 10             # Syscall code for exit
+    syscall                # Terminate the program
+    
+```
 
 ## Example Code
 
