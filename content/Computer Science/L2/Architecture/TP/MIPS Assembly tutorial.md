@@ -81,6 +81,12 @@ main:
     
 ```
 
+## Writing MIPS Code
+
+When writing MIPS assembly, follow these steps: 
+1. Begin with the `.data` section for variable declarations. 
+2. Follow with the `.text` section for your program instructions.
+3. End your program with a `syscall` to execute the final system call (e.g., exit).
 ## Example Code
 
 ### Example 1: Basic Addition and Print
