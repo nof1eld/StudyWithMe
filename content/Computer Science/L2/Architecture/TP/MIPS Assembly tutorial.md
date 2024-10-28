@@ -1,41 +1,66 @@
-
 ## Introduction
 
-MIPS (Microprocessor without Interlocked Pipeline Stages) is a reduced instruction set computer (RISC) instruction set architecture developed by MIPS Technologies. It's widely used in embedded systems and serves as an educational tool in computer architecture courses.
+MIPS (Microprocessor without Interlocked Pipeline Stages) is a reduced instruction set computer (RISC) instruction set architecture developed by MIPS Technologies. Widely used in embedded systems, MIPS serves as an educational tool in computer architecture courses due to its simplicity and ease of understanding.
 
 ## Structure of MIPS Code
 
-MIPS programs typically consist of two main sections:
+MIPS programs are typically structured with two main sections:
 
-1. `.data` section:
-   - This is where variables are declared.
+1. **`.data` section**:
+   - This is where variables and data are declared.
 
-2. `.text` section:
-   - This contains the program instructions.
-
-At the end of the program, we use the `syscall` instruction to execute the code.
+2. **`.text` section**:
+   - This section contains the program instructions.
+   - Programs end with a `syscall` instruction to execute system calls, such as printing or exiting.
 
 ## Key Features
 
 ### Register Naming
-- Register names are prefixed with a dollar sign ($)
-- Examples: $t0, $t1, $t2, $a0
+- Register names are prefixed with a dollar sign (`$`).
+- Common registers include:
+  - `$t0` to `$t9`: Temporary registers for computations.
+  - `$s0` to `$s7`: Saved registers that retain their values across function calls.
+  - `$a0` to `$a3`: Argument registers for function inputs.
+  - `$v0`, `$v1`: Used for function return values and system call codes.
 
 ### Common Instructions
 
-| Instruction | Description |
-|-------------|-------------|
-| `li`        | Load immediate |
-| `add`       | Addition |
-| `move`      | Move data between registers |
-| `syscall`   | System call |
+| Instruction | Description                        |
+|-------------|------------------------------------|
+| `li`        | Load immediate                     |
+| `lw`        | Load word                          |
+| `sw`        | Store word                         |
+| `add`       | Addition                           |
+| `sub`       | Subtraction                        |
+| `mul`       | Multiplication                     |
+| `div`       | Division (integer)                 |
+| `move`      | Move data between registers        |
+| `syscall`   | System call for input/output       |
 
 ## Writing MIPS Code
 
-When writing MIPS assembly, keep these points in mind:
+When writing MIPS assembly, follow these steps:
 1. Begin with the `.data` section for variable declarations.
 2. Follow with the `.text` section for your program instructions.
-3. End your program with a `syscall` to execute the code.
+3. End your program with a `syscall` to execute the final system call (e.g., exit).
+
+## Example Code
+
+### Example 1: Basic Addition and Print
+
+```assembly
+.text
+    li $t0, 12           # Load immediate value 12 into $t0
+    li $t1, 14           # Load immediate value 14 into $t1
+    add $t2, $t0, $t1    # Add $t0 and $t1, store result in $t2
+
+    move $a0, $t2        # Move the result to $a0 for printing
+    li $v0, 1            # System call code for print_integer
+    syscall              # Print the integer
+
+    li $v0, 10           # System call code for exit
+    syscall              # Exit the program
+
 
 ## Example
 
