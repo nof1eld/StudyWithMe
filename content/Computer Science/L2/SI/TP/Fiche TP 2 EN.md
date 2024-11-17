@@ -1,0 +1,1 @@
+![[TP_sheet_N_02_Information_system_S1_L2_by_BEGHDAOUI_version_anglais.pdf]]
