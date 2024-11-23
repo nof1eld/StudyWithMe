@@ -2,7 +2,7 @@
 ~
 ---
 
-*Note: Type de structure n'est pas 100% juste*
+*Note: n'est pas 100% juste*
 
 ### Exercice 1:
 
