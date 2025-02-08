@@ -1,3 +1,4 @@
+*Note: n'est pas 100% juste*
 # Partie 1
 ## Exercice 1
 

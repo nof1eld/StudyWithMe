@@ -1,0 +1,1 @@
+![[chap 4 indirect methods (1).pdf]]

@@ -1,0 +1,1 @@
+![[Chap3_Gauss methods.pdf]]
