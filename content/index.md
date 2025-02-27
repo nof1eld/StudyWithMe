@@ -20,9 +20,9 @@ title: "Study With Me"
 
 ### Course
 
-- [[Computer Science/L2/Architecture/Course/Chapitre 1|Chapitre 1]]
-- [[Computer Science/L2/Architecture/Course/Chapitre 2|Chapitre 2]]
-- [[Computer Science/L2/Architecture/Course/Chapitre 3|Chapitre 3]]
+- [[Computer Science/L2/Semester 1/Architecture/Course/Chapitre 1|Chapitre 1]]
+- [[Computer Science/L2/Semester 1/Architecture/Course/Chapitre 2|Chapitre 2]]
+- [[Computer Science/L2/Semester 1/Architecture/Course/Chapitre 3|Chapitre 3]]
 - [[Chapitre 4|Chapitre 4]]
 - [[Chapitre 5|Chapitre 5]]
 - [[Chapitre 6|Chapitre 6]]
@@ -70,9 +70,9 @@ title: "Study With Me"
 
 ### Course
 
-- [[Computer Science/L2/Methodes Numériques/TP/Slides TP/Chapitre 1|Chapitre 1]]
-- [[Computer Science/L2/Methodes Numériques/TP/Slides TP/Chapitre 2|Chapitre 2]]
-- [[Computer Science/L2/Methodes Numériques/TP/Slides TP/Chapitre 3|Chapitre 3]]
+- [[Computer Science/L2/Semester 1/Methodes Numériques/TP/Slides TP/Chapitre 1|Chapitre 1]]
+- [[Computer Science/L2/Semester 1/Methodes Numériques/TP/Slides TP/Chapitre 2|Chapitre 2]]
+- [[Computer Science/L2/Semester 1/Methodes Numériques/TP/Slides TP/Chapitre 3|Chapitre 3]]
 
 ### TD
 
